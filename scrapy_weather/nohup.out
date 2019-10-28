@@ -29687,3 +29687,1304 @@ http://www.nmc.cn/f/rest/real/58238?_=1572256463265*****************************
  'winddirect': '9999',
  'windpower': '9999',
  'windspeed': ''}
+2019-10-28 17:59:24 [scrapy.utils.log] INFO: Scrapy 1.7.4 started (bot: scrapy_weather)
+2019-10-28 17:59:24 [scrapy.utils.log] INFO: Versions: lxml 4.4.1.0, libxml2 2.9.9, cssselect 1.1.0, parsel 1.5.2, w3lib 1.21.0, Twisted 19.7.0, Python 3.6.9 |Anaconda, Inc.| (default, Jul 30 2019, 19:07:31) - [GCC 7.3.0], pyOpenSSL 19.0.0 (OpenSSL 1.1.1d  10 Sep 2019), cryptography 2.8, Platform Linux-3.10.0-957.21.3.el7.x86_64-x86_64-with-centos-7.7.1908-Core
+2019-10-28 17:59:24 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'scrapy_weather', 'NEWSPIDER_MODULE': 'scrapy_weather.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['scrapy_weather.spiders']}
+2019-10-28 17:59:24 [scrapy.extensions.telnet] INFO: Telnet Password: bb0a08e6292b1484
+2019-10-28 17:59:24 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2019-10-28 17:59:24 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-10-28 17:59:24 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-10-28 17:59:24 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy_weather.pipelines.WeatherSqlPipeline']
+2019-10-28 17:59:24 [scrapy.core.engine] INFO: Spider opened
+2019-10-28 17:59:24 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-10-28 17:59:24 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2019-10-28 17:59:24 [scrapy.core.engine] DEBUG: Crawled (404) <GET http://www.nmc.cn/robots.txt> (referer: None)
+2019-10-28 17:59:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.nmc.cn/publish/forecast/AJS/nanjing1.html> (referer: None)
+2019-10-28 17:59:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.nmc.cn/publish/forecast/ASX/wutaishan.html> (referer: None)
+2019-10-28 17:59:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.nmc.cn/publish/forecast/ASN/xian.html> (referer: None)
+2019-10-28 17:59:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.nmc.cn/publish/forecast/ASX/fanzhi.html> (referer: None)
+2019-10-28 17:59:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.nmc.cn/publish/forecast/AAH/xuancheng.html> (referer: None)
+2019-10-28 17:59:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.nmc.cn/f/rest/aqi/58238?_=1572256764573> (referer: http://www.nmc.cn/publish/forecast/AJS/nanjing1.html) ['partial']
+2019-10-28 17:59:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.nmc.cn/f/rest/aqi/58433?_=1572256764642> (referer: http://www.nmc.cn/publish/forecast/AAH/xuancheng.html) ['partial']
+2019-10-28 17:59:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.nmc.cn/f/rest/aqi/53585?_=1572256764628> (referer: http://www.nmc.cn/publish/forecast/ASX/fanzhi.html) ['partial']
+2019-10-28 17:59:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.nmc.cn/f/rest/aqi/57036?_=1572256764610> (referer: http://www.nmc.cn/publish/forecast/ASN/xian.html) ['partial']
+2019-10-28 17:59:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.nmc.cn/f/rest/aqi/53588?_=1572256764599> (referer: http://www.nmc.cn/publish/forecast/ASX/wutaishan.html) ['partial']
+2019-10-28 17:59:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.nmc.cn/f/rest/real/58238?_=1572256764755> (referer: http://www.nmc.cn/f/rest/aqi/58238?_=1572256764573) ['partial']
+2019-10-28 17:59:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.nmc.cn/f/rest/real/58433?_=1572256764784> (referer: http://www.nmc.cn/f/rest/aqi/58433?_=1572256764642) ['partial']
+2019-10-28 17:59:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.nmc.cn/f/rest/real/53588?_=1572256764794> (referer: http://www.nmc.cn/f/rest/aqi/53588?_=1572256764599) ['partial']
+2019-10-28 17:59:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.nmc.cn/f/rest/real/53585?_=1572256764790> (referer: http://www.nmc.cn/f/rest/aqi/53585?_=1572256764628) ['partial']
+2019-10-28 17:59:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.nmc.cn/f/rest/real/57036?_=1572256764792> (referer: http://www.nmc.cn/f/rest/aqi/57036?_=1572256764610) ['partial']
+2019-10-28 17:59:24 [scrapy.core.scraper] ERROR: Error processing {'airpressure': '1011.0',
+ 'alert': '9999',
+ 'aq': '2',
+ 'aq_text': '良',
+ 'aqi': '55',
+ 'city': '南京',
+ 'code': '58238',
+ 'days_1': "{'date': '今天', 'day_info': '晴', 'night_info': None, 'day_temp': ' "
+           "9℃ ', 'night_temp': None, 'day_winddirect': '无持续风向', "
+           "'night_winddirect': None, 'day_power': '微风', 'night_power': None}",
+ 'days_2': "{'date': '明 天', 'day_info': '晴', 'night_info': '晴', 'day_temp': ' "
+           "21℃ ', 'night_temp': ' 8℃ ', 'day_winddirect': '无持续风向', "
+           "'night_winddirect': '东南风', 'day_power': '微风', 'night_power': '微风'}",
+ 'days_3': "{'date': '后 天', 'day_info': '晴', 'night_info': '晴', 'day_temp': ' "
+           "22℃ ', 'night_temp': ' 9℃ ', 'day_winddirect': '南风', "
+           "'night_winddirect': '南风', 'day_power': '微风', 'night_power': '微风'}",
+ 'days_4': "{'date': '10月31日', 'day_info': '晴', 'night_info': '多云', "
+           "'day_temp': ' 24℃ ', 'night_temp': ' 12℃ ', 'day_winddirect': "
+           "'西南风', 'night_winddirect': '东风', 'day_power': '微风', 'night_power': "
+           "'微风'}",
+ 'days_5': "{'date': '11月01日', 'day_info': '多云', 'night_info': '多云', "
+           "'day_temp': ' 23℃ ', 'night_temp': ' 14℃ ', 'day_winddirect': "
+           "'东风', 'night_winddirect': '东南风', 'day_power': '微风', 'night_power': "
+           "'微风'}",
+ 'days_6': "{'date': '11月02日', 'day_info': '多云', 'night_info': '多云', "
+           "'day_temp': ' 22℃ ', 'night_temp': ' 14℃ ', 'day_winddirect': "
+           "'东风', 'night_winddirect': '东风', 'day_power': '微风', 'night_power': "
+           "'微风'}",
+ 'days_7': "{'date': '11月03日', 'day_info': '多云', 'night_info': '多云', "
+           "'day_temp': ' 22℃ ', 'night_temp': ' 13℃ ', 'day_winddirect': "
+           "'北风', 'night_winddirect': '东北风', 'day_power': '3~4级', "
+           "'night_power': '3~4级'}",
+ 'feelst': '9999.0',
+ 'fmeans': '9999',
+ 'humidity': '35.0',
+ 'icomfort': '9999',
+ 'info': '-',
+ 'issuecontent': '9999',
+ 'province': '江苏省',
+ 'publish_time': '2019-10-28 16:35',
+ 'rain': '9999.0',
+ 'rcomfort': '9999',
+ 'temperature': '21.1',
+ 'winddirect': '9999',
+ 'windpower': '9999',
+ 'windspeed': ''}
+Traceback (most recent call last):
+  File "/home/ljp/Apps/Anaconda/envs/scrapy/lib/python3.6/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/ljp/Projects/scrapy_weather/scrapy_weather/pipelines.py", line 57, in process_item
+    item['days_4'], item['days_5'], item['days_6'], item['days_7'] ))
+  File "/home/ljp/Apps/Anaconda/envs/scrapy/lib/python3.6/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/home/ljp/Apps/Anaconda/envs/scrapy/lib/python3.6/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/home/ljp/Apps/Anaconda/envs/scrapy/lib/python3.6/site-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/ljp/Apps/Anaconda/envs/scrapy/lib/python3.6/site-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/home/ljp/Apps/Anaconda/envs/scrapy/lib/python3.6/site-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/home/ljp/Apps/Anaconda/envs/scrapy/lib/python3.6/site-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/home/ljp/Apps/Anaconda/envs/scrapy/lib/python3.6/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/ljp/Apps/Anaconda/envs/scrapy/lib/python3.6/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1062, "Duplicate entry '2019-10-28 16:35:00-58238' for key 'PRIMARY'")
+2019-10-28 17:59:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.nmc.cn/f/rest/real/58433?_=1572256764784>
+None
+http://www.nmc.cn/f/rest/aqi/58238?_=1572256764573****************************************************************************************************
+http://www.nmc.cn/f/rest/aqi/58433?_=1572256764642****************************************************************************************************
+http://www.nmc.cn/f/rest/aqi/53585?_=1572256764628****************************************************************************************************
+http://www.nmc.cn/f/rest/aqi/57036?_=1572256764610****************************************************************************************************
+http://www.nmc.cn/f/rest/aqi/53588?_=1572256764599****************************************************************************************************
+http://www.nmc.cn/f/rest/real/58238?_=1572256764755****************************************************************************************************
+{'airpressure': 1011.0,
+ 'alert': '9999',
+ 'aq': 2,
+ 'aq_text': '良',
+ 'aqi': 55,
+ 'city': '南京',
+ 'code': '58238',
+ 'days_1': {'date': '今天',
+            'day_info': '晴',
+            'day_power': '微风',
+            'day_temp': ' 9℃ ',
+            'day_winddirect': '无持续风向',
+            'night_info': None,
+            'night_power': None,
+            'night_temp': None,
+            'night_winddirect': None},
+ 'days_2': {'date': '明 天',
+            'day_info': '晴',
+            'day_power': '微风',
+            'day_temp': ' 21℃ ',
+            'day_winddirect': '无持续风向',
+            'night_info': '晴',
+            'night_power': '微风',
+            'night_temp': ' 8℃ ',
+            'night_winddirect': '东南风'},
+ 'days_3': {'date': '后 天',
+            'day_info': '晴',
+            'day_power': '微风',
+            'day_temp': ' 22℃ ',
+            'day_winddirect': '南风',
+            'night_info': '晴',
+            'night_power': '微风',
+            'night_temp': ' 9℃ ',
+            'night_winddirect': '南风'},
+ 'days_4': {'date': '10月31日',
+            'day_info': '晴',
+            'day_power': '微风',
+            'day_temp': ' 24℃ ',
+            'day_winddirect': '西南风',
+            'night_info': '多云',
+            'night_power': '微风',
+            'night_temp': ' 12℃ ',
+            'night_winddirect': '东风'},
+ 'days_5': {'date': '11月01日',
+            'day_info': '多云',
+            'day_power': '微风',
+            'day_temp': ' 23℃ ',
+            'day_winddirect': '东风',
+            'night_info': '多云',
+            'night_power': '微风',
+            'night_temp': ' 14℃ ',
+            'night_winddirect': '东南风'},
+ 'days_6': {'date': '11月02日',
+            'day_info': '多云',
+            'day_power': '微风',
+            'day_temp': ' 22℃ ',
+            'day_winddirect': '东风',
+            'night_info': '多云',
+            'night_power': '微风',
+            'night_temp': ' 14℃ ',
+            'night_winddirect': '东风'},
+ 'days_7': {'date': '11月03日',
+            'day_info': '多云',
+            'day_power': '3~4级',
+            'day_temp': ' 22℃ ',
+            'day_winddirect': '北风',
+            'night_info': '多云',
+            'night_power': '3~4级',
+            'night_temp': ' 13℃ ',
+            'night_winddirect': '东北风'},
+ 'feelst': 9999.0,
+ 'fmeans': '9999',
+ 'humidity': 35.0,
+ 'icomfort': 9999,
+ 'info': '-',
+ 'issuecontent': '9999',
+ 'province': '江苏省',
+ 'publish_time': '2019-10-28 16:35',
+ 'rain': 9999.0,
+ 'rcomfort': 9999,
+ 'temperature': 21.1,
+ 'winddirect': '9999',
+ 'windpower': '9999',
+ 'windspeed': ''}
+http://www.nmc.cn/f/rest/real/58433?_=1572256764784****************************************************************************************************
+{'airpressure': 1012.0,
+ 'alert': '9999',
+ 'aq': 2,
+ 'aq_text': '良',
+ 'aqi': 51,
+ 'city': '宣城',
+ 'code': '58433',
+ 'days_1': {'date': '今天',
+            'day_info': '晴',
+            'day_power': '3~4级',
+            'day_temp': ' 10℃ ',
+            'day_winddirect': '西风',
+            'night_info': None,
+            'night_power': None,
+            'night_temp': None,
+            'night_winddirect': None},
+ 'days_2': {'date': '明 天',
+            'day_info': '晴',
+            'day_power': '微风',
+            'day_temp': ' 23℃ ',
+            'day_winddirect': '东北风',
+            'night_info': '晴',
+            'night_power': '微风',
+            'night_temp': ' 9℃ ',
+            'night_winddirect': '东南风'},
+ 'days_3': {'date': '后 天',
+            'day_info': '晴',
+            'day_power': '微风',
+            'day_temp': ' 24℃ ',
+            'day_winddirect': '东风',
+            'night_info': '晴',
+            'night_power': '微风',
+            'night_temp': ' 9℃ ',
+            'night_winddirect': '东南风'},
+ 'days_4': {'date': '10月31日',
+            'day_info': '晴',
+            'day_power': '微风',
+            'day_temp': ' 25℃ ',
+            'day_winddirect': '东北风',
+            'night_info': '多云',
+            'night_power': '微风',
+            'night_temp': ' 9℃ ',
+            'night_winddirect': '东南风'},
+ 'days_5': {'date': '11月01日',
+            'day_info': '多云',
+            'day_power': '微风',
+            'day_temp': ' 24℃ ',
+            'day_winddirect': '东风',
+            'night_info': '阴',
+            'night_power': '微风',
+            'night_temp': ' 12℃ ',
+            'night_winddirect': '东风'},
+ 'days_6': {'date': '11月02日',
+            'day_info': '阴',
+            'day_power': '微风',
+            'day_temp': ' 24℃ ',
+            'day_winddirect': '东北风',
+            'night_info': '多云',
+            'night_power': '微风',
+            'night_temp': ' 14℃ ',
+            'night_winddirect': '东风'},
+ 'days_7': {'date': '11月03日',
+            'day_info': '多云',
+            'day_power': '微风',
+            'day_temp': ' 23℃ ',
+            'day_winddirect': '东风',
+            'night_info': '多云',
+            'night_power': '微风',
+            'night_temp': ' 11℃ ',
+            'night_winddirect': '东风'},
+ 'feelst': 9999.0,
+ 'fmeans': '9999',
+ 'humidity': 41.0,
+ 'icomfort': 9999,
+ 'info': '多云',
+ 'issuecontent': '9999',
+ 'province': '安徽省',
+ 'publish_time': '2019-10-28 17:35',
+ 'rain': 9999.0,
+ 'rcomfort': 9999,
+ 'temperature': 20.6,
+ 'winddirect': '9999',
+ 'windpower': '9999',
+ 'windspeed': ''}
+http://www.nmc.cn/f/rest/real/53588?_=1572256764794****************************************************************************************************
+{'airpressure': 777.0,
+ 'alert': '9999',
+ 'aq': 2,
+ 'aq_text': '良',
+ 'aqi': 86,
+ 'city': '五台山',
+ 'code': '53588',
+ 'days_1': {'date': '今天',
+            'day_info': '晴',
+            'day_power': '5~6级',
+            'day_temp': ' 0℃ ',
+            'day_winddirect': '西北风',
+            'night_info': None,
+            'night_power': None,
+            'night_temp': None,
+            'night_winddirect': None},
+ 'days_2': {'date': '明 天',
+            'day_info': '晴',
+            'day_power': '4~5级',
+            'day_temp': ' 8℃ ',
+            'day_winddirect': '西风',
+            'night_info': '晴',
+            'night_power': '3~4级',
+            'night_temp': ' -3℃ ',
+            'night_winddirect': '西风'},
+ 'days_3': {'date': '后 天',
+            'day_info': '晴',
+            'day_power': '4~5级',
+            'day_temp': ' 11℃ ',
+            'day_winddirect': '西北风',
+            'night_info': '晴',
+            'night_power': '3~4级',
+            'night_temp': ' 1℃ ',
+            'night_winddirect': '西北风'},
+ 'days_4': {'date': '10月31日',
+            'day_info': '晴',
+            'day_power': '3~4级',
+            'day_temp': ' 10℃ ',
+            'day_winddirect': '南风',
+            'night_info': '多云',
+            'night_power': '3~4级',
+            'night_temp': ' 4℃ ',
+            'night_winddirect': '南风'},
+ 'days_5': {'date': '11月01日',
+            'day_info': '多云',
+            'day_power': '3~4级',
+            'day_temp': ' 9℃ ',
+            'day_winddirect': '南风',
+            'night_info': '多云',
+            'night_power': '3~4级',
+            'night_temp': ' 3℃ ',
+            'night_winddirect': '东南风'},
+ 'days_6': {'date': '11月02日',
+            'day_info': '多云',
+            'day_power': '3~4级',
+            'day_temp': ' 9℃ ',
+            'day_winddirect': '南风',
+            'night_info': '多云',
+            'night_power': '3~4级',
+            'night_temp': ' 1℃ ',
+            'night_winddirect': '南风'},
+ 'days_7': {'date': '11月03日',
+            'day_info': '多云',
+            'day_power': '3~4级',
+            'day_temp': ' 10℃ ',
+            'day_winddirect': '南风',
+            'night_info': '多云',
+            'night_power': '3~4级',
+            'night_temp': ' 3℃ ',
+            'night_winddirect': '北风'},
+ 'feelst': 9999.0,
+ 'fmeans': '9999',
+ 'humidity': 28.0,
+ 'icomfort': 9999,
+ 'info': '晴',
+ 'issuecontent': '9999',
+ 'province': '山西省',
+ 'publish_time': '2019-10-28 17:35',
+ 'rain': 9999.0,
+ 'rcomfort': 9999,
+ 'temperature': -2.7,
+ 'winddirect': '9999',
+ 'windpower': '9999',
+ 'windspeed': ''}2019-10-28 17:59:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.nmc.cn/f/rest/real/53588?_=1572256764794>
+None
+2019-10-28 17:59:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.nmc.cn/f/rest/real/53585?_=1572256764790>
+None
+2019-10-28 17:59:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.nmc.cn/f/rest/real/57036?_=1572256764792>
+None
+2019-10-28 17:59:25 [scrapy.core.engine] INFO: Closing spider (finished)
+2019-10-28 17:59:25 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 6829,
+ 'downloader/request_count': 16,
+ 'downloader/request_method_count/GET': 16,
+ 'downloader/response_bytes': 79508,
+ 'downloader/response_count': 16,
+ 'downloader/response_status_count/200': 15,
+ 'downloader/response_status_count/404': 1,
+ 'elapsed_time_seconds': 0.773718,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2019, 10, 28, 9, 59, 25, 15497),
+ 'item_scraped_count': 4,
+ 'log_count/DEBUG': 20,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 10,
+ 'memusage/max': 45359104,
+ 'memusage/startup': 45359104,
+ 'request_depth_max': 2,
+ 'response_received_count': 16,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/404': 1,
+ 'scheduler/dequeued': 15,
+ 'scheduler/dequeued/memory': 15,
+ 'scheduler/enqueued': 15,
+ 'scheduler/enqueued/memory': 15,
+ 'start_time': datetime.datetime(2019, 10, 28, 9, 59, 24, 241779)}
+2019-10-28 17:59:25 [scrapy.core.engine] INFO: Spider closed (finished)
+
+http://www.nmc.cn/f/rest/real/53585?_=1572256764790****************************************************************************************************
+{'airpressure': 911.0,
+ 'alert': '9999',
+ 'aq': 2,
+ 'aq_text': '良',
+ 'aqi': 86,
+ 'city': '繁峙',
+ 'code': '53585',
+ 'days_1': {'date': '今天',
+            'day_info': '晴',
+            'day_power': '微风',
+            'day_temp': ' -2℃ ',
+            'day_winddirect': '西北风',
+            'night_info': None,
+            'night_power': None,
+            'night_temp': None,
+            'night_winddirect': None},
+ 'days_2': {'date': '明 天',
+            'day_info': '晴',
+            'day_power': '微风',
+            'day_temp': ' 18℃ ',
+            'day_winddirect': '西风',
+            'night_info': '晴',
+            'night_power': '微风',
+            'night_temp': ' 0℃ ',
+            'night_winddirect': '西风'},
+ 'days_3': {'date': '后 天',
+            'day_info': '晴',
+            'day_power': '微风',
+            'day_temp': ' 19℃ ',
+            'day_winddirect': '西北风',
+            'night_info': '晴',
+            'night_power': '微风',
+            'night_temp': ' 0℃ ',
+            'night_winddirect': '西北风'},
+ 'days_4': {'date': '10月31日',
+            'day_info': '晴',
+            'day_power': '微风',
+            'day_temp': ' 19℃ ',
+            'day_winddirect': '西南风',
+            'night_info': '多云',
+            'night_power': '微风',
+            'night_temp': ' 0℃ ',
+            'night_winddirect': '南风'},
+ 'days_5': {'date': '11月01日',
+            'day_info': '多云',
+            'day_power': '微风',
+            'day_temp': ' 19℃ ',
+            'day_winddirect': '南风',
+            'night_info': '多云',
+            'night_power': '微风',
+            'night_temp': ' 1℃ ',
+            'night_winddirect': '南风'},
+ 'days_6': {'date': '11月02日',
+            'day_info': '多云',
+            'day_power': '微风',
+            'day_temp': ' 16℃ ',
+            'day_winddirect': '南风',
+            'night_info': '多云',
+            'night_power': '微风',
+            'night_temp': ' 1℃ ',
+            'night_winddirect': '南风'},
+ 'days_7': {'date': '11月03日',
+            'day_info': '多云',
+            'day_power': '微风',
+            'day_temp': ' 16℃ ',
+            'day_winddirect': '西南风',
+            'night_info': '多云',
+            'night_power': '微风',
+            'night_temp': ' 1℃ ',
+            'night_winddirect': '西北风'},
+ 'feelst': 9999.0,
+ 'fmeans': '9999',
+ 'humidity': 16.0,
+ 'icomfort': 9999,
+ 'info': '晴',
+ 'issuecontent': '9999',
+ 'province': '山西省',
+ 'publish_time': '2019-10-28 17:35',
+ 'rain': 9999.0,
+ 'rcomfort': 9999,
+ 'temperature': 8.6,
+ 'winddirect': '9999',
+ 'windpower': '9999',
+ 'windspeed': ''}
+http://www.nmc.cn/f/rest/real/57036?_=1572256764792****************************************************************************************************
+{'airpressure': 971.0,
+ 'alert': '9999',
+ 'aq': 3,
+ 'aq_text': '轻度污染',
+ 'aqi': 111,
+ 'city': '西安',
+ 'code': '57036',
+ 'days_1': {'date': '今天',
+            'day_info': '晴',
+            'day_power': '微风',
+            'day_temp': ' 6℃ ',
+            'day_winddirect': '东南风',
+            'night_info': None,
+            'night_power': None,
+            'night_temp': None,
+            'night_winddirect': None},
+ 'days_2': {'date': '明 天',
+            'day_info': '晴',
+            'day_power': '微风',
+            'day_temp': ' 19℃ ',
+            'day_winddirect': '东北风',
+            'night_info': '晴',
+            'night_power': '微风',
+            'night_temp': ' 7℃ ',
+            'night_winddirect': '西南风'},
+ 'days_3': {'date': '后 天',
+            'day_info': '晴',
+            'day_power': '微风',
+            'day_temp': ' 20℃ ',
+            'day_winddirect': '西北风',
+            'night_info': '多云',
+            'night_power': '微风',
+            'night_temp': ' 7℃ ',
+            'night_winddirect': '东南风'},
+ 'days_4': {'date': '10月31日',
+            'day_info': '小雨',
+            'day_power': '微风',
+            'day_temp': ' 18℃ ',
+            'day_winddirect': '东北风',
+            'night_info': '阴',
+            'night_power': '微风',
+            'night_temp': ' 8℃ ',
+            'night_winddirect': '东北风'},
+ 'days_5': {'date': '11月01日',
+            'day_info': '阴',
+            'day_power': '微风',
+            'day_temp': ' 17℃ ',
+            'day_winddirect': '东北风',
+            'night_info': '晴',
+            'night_power': '微风',
+            'night_temp': ' 8℃ ',
+            'night_winddirect': '东北风'},
+ 'days_6': {'date': '11月02日',
+            'day_info': '晴',
+            'day_power': '微风',
+            'day_temp': ' 18℃ ',
+            'day_winddirect': '东北风',
+            'night_info': '阴',
+            'night_power': '微风',
+            'night_temp': ' 9℃ ',
+            'night_winddirect': '东风'},
+ 'days_7': {'date': '11月03日',
+            'day_info': '多云',
+            'day_power': '3~4级',
+            'day_temp': ' 18℃ ',
+            'day_winddirect': '东北风',
+            'night_info': '晴',
+            'night_power': '微风',
+            'night_temp': ' 9℃ ',
+            'night_winddirect': '东风'},
+ 'feelst': 9999.0,
+ 'fmeans': '9999',
+ 'humidity': 33.0,
+ 'icomfort': 9999,
+ 'info': '-',
+ 'issuecontent': '9999',
+ 'province': '陕西省',
+ 'publish_time': '2019-10-28 17:35',
+ 'rain': 9999.0,
+ 'rcomfort': 9999,
+ 'temperature': 18.9,
+ 'winddirect': '9999',
+ 'windpower': '9999',
+ 'windspeed': ''}
+2019-10-28 18:04:25 [scrapy.utils.log] INFO: Scrapy 1.7.4 started (bot: scrapy_weather)
+2019-10-28 18:04:25 [scrapy.utils.log] INFO: Versions: lxml 4.4.1.0, libxml2 2.9.9, cssselect 1.1.0, parsel 1.5.2, w3lib 1.21.0, Twisted 19.7.0, Python 3.6.9 |Anaconda, Inc.| (default, Jul 30 2019, 19:07:31) - [GCC 7.3.0], pyOpenSSL 19.0.0 (OpenSSL 1.1.1d  10 Sep 2019), cryptography 2.8, Platform Linux-3.10.0-957.21.3.el7.x86_64-x86_64-with-centos-7.7.1908-Core
+2019-10-28 18:04:25 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'scrapy_weather', 'NEWSPIDER_MODULE': 'scrapy_weather.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['scrapy_weather.spiders']}
+2019-10-28 18:04:25 [scrapy.extensions.telnet] INFO: Telnet Password: 59145751fe5f7512
+2019-10-28 18:04:25 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2019-10-28 18:04:25 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-10-28 18:04:25 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-10-28 18:04:25 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy_weather.pipelines.WeatherSqlPipeline']
+2019-10-28 18:04:25 [scrapy.core.engine] INFO: Spider opened
+2019-10-28 18:04:25 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-10-28 18:04:25 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2019-10-28 18:04:25 [scrapy.core.engine] DEBUG: Crawled (404) <GET http://www.nmc.cn/robots.txt> (referer: None)
+2019-10-28 18:04:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.nmc.cn/publish/forecast/AAH/xuancheng.html> (referer: None)
+2019-10-28 18:04:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.nmc.cn/publish/forecast/ASX/fanzhi.html> (referer: None)
+2019-10-28 18:04:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.nmc.cn/publish/forecast/AJS/nanjing1.html> (referer: None)
+2019-10-28 18:04:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.nmc.cn/publish/forecast/ASN/xian.html> (referer: None)
+2019-10-28 18:04:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.nmc.cn/publish/forecast/ASX/wutaishan.html> (referer: None)
+2019-10-28 18:04:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.nmc.cn/f/rest/aqi/58433?_=1572257066071> (referer: http://www.nmc.cn/publish/forecast/AAH/xuancheng.html) ['partial']
+2019-10-28 18:04:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.nmc.cn/f/rest/aqi/53588?_=1572257066139> (referer: http://www.nmc.cn/publish/forecast/ASX/wutaishan.html) ['partial']
+2019-10-28 18:04:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.nmc.cn/f/rest/aqi/57036?_=1572257066122> (referer: http://www.nmc.cn/publish/forecast/ASN/xian.html) ['partial']
+2019-10-28 18:04:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.nmc.cn/f/rest/aqi/58238?_=1572257066111> (referer: http://www.nmc.cn/publish/forecast/AJS/nanjing1.html) ['partial']
+2019-10-28 18:04:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.nmc.cn/f/rest/aqi/53585?_=1572257066096> (referer: http://www.nmc.cn/publish/forecast/ASX/fanzhi.html) ['partial']
+2019-10-28 18:04:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.nmc.cn/f/rest/real/58433?_=1572257066251> (referer: http://www.nmc.cn/f/rest/aqi/58433?_=1572257066071) ['partial']
+2019-10-28 18:04:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.nmc.cn/f/rest/real/53588?_=1572257066279> (referer: http://www.nmc.cn/f/rest/aqi/53588?_=1572257066139) ['partial']
+2019-10-28 18:04:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.nmc.cn/f/rest/real/58238?_=1572257066286> (referer: http://www.nmc.cn/f/rest/aqi/58238?_=1572257066111) ['partial']
+2019-10-28 18:04:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.nmc.cn/f/rest/real/53585?_=1572257066287> (referer: http://www.nmc.cn/f/rest/aqi/53585?_=1572257066096) ['partial']
+2019-10-28 18:04:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.nmc.cn/f/rest/real/57036?_=1572257066284> (referer: http://www.nmc.cn/f/rest/aqi/57036?_=1572257066122) ['partial']
+2019-10-28 18:04:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.nmc.cn/f/rest/real/58433?_=1572257066251>
+None
+2019-10-28 18:04:26 [scrapy.core.scraper] ERROR: Error processing {'airpressure': '777.0',
+ 'alert': '9999',
+ 'aq': '2',
+ 'aq_text': '良',
+ 'aqi': '86',
+ 'city': '五台山',
+ 'code': '53588',
+ 'days_1': "{'date': '今天', 'day_info': '晴', 'night_info': None, 'day_temp': ' "
+           "0℃ ', 'night_temp': None, 'day_winddirect': '西北风', "
+           "'night_winddirect': None, 'day_power': '5~6级', 'night_power': "
+           'None}',
+ 'days_2': "{'date': '明 天', 'day_info': '晴', 'night_info': '晴', 'day_temp': ' "
+           "8℃ ', 'night_temp': ' -3℃ ', 'day_winddirect': '西风', "
+           "'night_winddirect': '西风', 'day_power': '4~5级', 'night_power': "
+           "'3~4级'}",
+ 'days_3': "{'date': '后 天', 'day_info': '晴', 'night_info': '晴', 'day_temp': ' "
+           "11℃ ', 'night_temp': ' 1℃ ', 'day_winddirect': '西北风', "
+           "'night_winddirect': '西北风', 'day_power': '4~5级', 'night_power': "
+           "'3~4级'}",
+ 'days_4': "{'date': '10月31日', 'day_info': '晴', 'night_info': '多云', "
+           "'day_temp': ' 10℃ ', 'night_temp': ' 4℃ ', 'day_winddirect': '南风', "
+           "'night_winddirect': '南风', 'day_power': '3~4级', 'night_power': "
+           "'3~4级'}",
+ 'days_5': "{'date': '11月01日', 'day_info': '多云', 'night_info': '多云', "
+           "'day_temp': ' 9℃ ', 'night_temp': ' 3℃ ', 'day_winddirect': '南风', "
+           "'night_winddirect': '东南风', 'day_power': '3~4级', 'night_power': "
+           "'3~4级'}",
+ 'days_6': "{'date': '11月02日', 'day_info': '多云', 'night_info': '多云', "
+           "'day_temp': ' 9℃ ', 'night_temp': ' 1℃ ', 'day_winddirect': '南风', "
+           "'night_winddirect': '南风', 'day_power': '3~4级', 'night_power': "
+           "'3~4级'}",
+ 'days_7': "{'date': '11月03日', 'day_info': '多云', 'night_info': '多云', "
+           "'day_temp': ' 10℃ ', 'night_temp': ' 3℃ ', 'day_winddirect': '南风', "
+           "'night_winddirect': '北风', 'day_power': '3~4级', 'night_power': "
+           "'3~4级'}",
+ 'feelst': '9999.0',
+ 'fmeans': '9999',
+ 'humidity': '28.0',
+ 'icomfort': '9999',
+ 'info': '晴',
+ 'issuecontent': '9999',
+ 'province': '山西省',
+ 'publish_time': '2019-10-28 17:35',
+ 'rain': '9999.0',
+ 'rcomfort': '9999',
+ 'temperature': '-2.7',
+ 'winddirect': '9999',
+ 'windpower': '9999',
+ 'windspeed': ''}
+Traceback (most recent call last):
+  File "/home/ljp/Apps/Anaconda/envs/scrapy/lib/python3.6/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/ljp/Projects/scrapy_weather/scrapy_weather/pipelines.py", line 57, in process_item
+    item['days_4'], item['days_5'], item['days_6'], item['days_7'] ))
+  File "/home/ljp/Apps/Anaconda/envs/scrapy/lib/python3.6/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/home/ljp/Apps/Anaconda/envs/scrapy/lib/python3.6/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/home/ljp/Apps/Anaconda/envs/scrapy/lib/python3.6/site-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/ljp/Apps/Anaconda/envs/scrapy/lib/python3.6/site-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/home/ljp/Apps/Anaconda/envs/scrapy/lib/python3.6/site-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/home/ljp/Apps/Anaconda/envs/scrapy/lib/python3.6/site-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/home/ljp/Apps/Anaconda/envs/scrapy/lib/python3.6/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/ljp/Apps/Anaconda/envs/scrapy/lib/python3.6/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1062, "Duplicate entry '2019-10-28 17:35:00-53588' for key 'PRIMARY'")
+http://www.nmc.cn/f/rest/aqi/58433?_=1572257066071****************************************************************************************************
+http://www.nmc.cn/f/rest/aqi/53588?_=1572257066139****************************************************************************************************
+http://www.nmc.cn/f/rest/aqi/57036?_=1572257066122****************************************************************************************************
+http://www.nmc.cn/f/rest/aqi/58238?_=1572257066111****************************************************************************************************
+http://www.nmc.cn/f/rest/aqi/53585?_=1572257066096****************************************************************************************************
+http://www.nmc.cn/f/rest/real/58433?_=1572257066251****************************************************************************************************
+{'airpressure': 1012.0,
+ 'alert': '9999',
+ 'aq': 2,
+ 'aq_text': '良',
+ 'aqi': 51,
+ 'city': '宣城',
+ 'code': '58433',
+ 'days_1': {'date': '今天',
+            'day_info': '晴',
+            'day_power': '3~4级',
+            'day_temp': ' 10℃ ',
+            'day_winddirect': '西风',
+            'night_info': None,
+            'night_power': None,
+            'night_temp': None,
+            'night_winddirect': None},
+ 'days_2': {'date': '明 天',
+            'day_info': '晴',
+            'day_power': '微风',
+            'day_temp': ' 23℃ ',
+            'day_winddirect': '东北风',
+            'night_info': '晴',
+            'night_power': '微风',
+            'night_temp': ' 9℃ ',
+            'night_winddirect': '东南风'},
+ 'days_3': {'date': '后 天',
+            'day_info': '晴',
+            'day_power': '微风',
+            'day_temp': ' 24℃ ',
+            'day_winddirect': '东风',
+            'night_info': '晴',
+            'night_power': '微风',
+            'night_temp': ' 9℃ ',
+            'night_winddirect': '东南风'},
+ 'days_4': {'date': '10月31日',
+            'day_info': '晴',
+            'day_power': '微风',
+            'day_temp': ' 25℃ ',
+            'day_winddirect': '东北风',
+            'night_info': '多云',
+            'night_power': '微风',
+            'night_temp': ' 9℃ ',
+            'night_winddirect': '东南风'},
+ 'days_5': {'date': '11月01日',
+            'day_info': '多云',
+            'day_power': '微风',
+            'day_temp': ' 24℃ ',
+            'day_winddirect': '东风',
+            'night_info': '阴',
+            'night_power': '微风',
+            'night_temp': ' 12℃ ',
+            'night_winddirect': '东风'},
+ 'days_6': {'date': '11月02日',
+            'day_info': '阴',
+            'day_power': '微风',
+            'day_temp': ' 24℃ ',
+            'day_winddirect': '东北风',
+            'night_info': '多云',
+            'night_power': '微风',
+            'night_temp': ' 14℃ ',
+            'night_winddirect': '东风'},
+ 'days_7': {'date': '11月03日',
+            'day_info': '多云',
+            'day_power': '微风',
+            'day_temp': ' 23℃ ',
+            'day_winddirect': '东风',
+            'night_info': '多云',
+            'night_power': '微风',
+            'night_temp': ' 11℃ ',
+            'night_winddirect': '东风'},
+ 'feelst': 9999.0,
+ 'fmeans': '9999',
+ 'humidity': 42.0,
+ 'icomfort': 9999,
+ 'info': '多云',
+ 'issuecontent': '9999',
+ 'province': '安徽省',
+ 'publish_time': '2019-10-28 17:40',
+ 'rain': 9999.0,
+ 'rcomfort': 9999,
+ 'temperature': 20.4,
+ 'winddirect': '9999',
+ 'windpower': '9999',
+ 'windspeed': ''}
+http://www.nmc.cn/f/rest/real/53588?_=1572257066279****************************************************************************************************
+{'airpressure': 777.0,
+ 'alert': '9999',
+ 'aq': 2,
+ 'aq_text': '良',
+ 'aqi': 86,
+ 'city': '五台山',
+ 'code': '53588',
+ 'days_1': {'date': '今天',
+            'day_info': '晴',
+            'day_power': '5~6级',
+            'day_temp': ' 0℃ ',
+            'day_winddirect': '西北风',
+            'night_info': None,
+            'night_power': None,
+            'night_temp': None,
+            'night_winddirect': None},
+ 'days_2': {'date': '明 天',
+            'day_info': '晴',
+            'day_power': '4~5级',
+            'day_temp': ' 8℃ ',
+            'day_winddirect': '西风',
+            'night_info': '晴',
+            'night_power': '3~4级',
+            'night_temp': ' -3℃ ',
+            'night_winddirect': '西风'},
+ 'days_3': {'date': '后 天',
+            'day_info': '晴',
+            'day_power': '4~5级',
+            'day_temp': ' 11℃ ',
+            'day_winddirect': '西北风',
+            'night_info': '晴',
+            'night_power': '3~4级',
+            'night_temp': ' 1℃ ',
+            'night_winddirect': '西北风'},
+ 'days_4': {'date': '10月31日',
+            'day_info': '晴',
+            'day_power': '3~4级',
+            'day_temp': ' 10℃ ',
+            'day_winddirect': '南风',
+            'night_info': '多云',
+            'night_power': '3~4级',
+            'night_temp': ' 4℃ ',
+            'night_winddirect': '南风'},
+ 'days_5': {'date': '11月01日',
+            'day_info': '多云',
+            'day_power': '3~4级',
+            'day_temp': ' 9℃ ',
+            'day_winddirect': '南风',
+            'night_info': '多云',
+            'night_power': '3~4级',
+            'night_temp': ' 3℃ ',
+            'night_winddirect': '东南风'},
+ 'days_6': {'date': '11月02日',
+            'day_info': '多云',
+            'day_power': '3~4级',
+            'day_temp': ' 9℃ ',
+            'day_winddirect': '南风',
+            'night_info': '多云',
+            'night_power': '3~4级',
+            'night_temp': ' 1℃ ',
+            'night_winddirect': '南风'},
+ 'days_7': {'date': '11月03日',
+            'day_info': '多云',
+            'day_power': '3~4级',
+            'day_temp': ' 10℃ ',
+            'day_winddirect': '南风',
+            'night_info': '多云',
+            'night_power': '3~4级',
+            'night_temp': ' 3℃ ',
+            'night_winddirect': '北风'},
+ 'feelst': 9999.0,
+ 'fmeans': '9999',
+ 'humidity': 28.0,
+ 'icomfort': 9999,
+ 'info': '晴',
+ 'issuecontent': '9999',
+ 'province': '山西省',
+ 'publish_time': '2019-10-28 17:35',
+ 'rain': 9999.0,
+ 'rcomfort': 9999,
+ 'temperature': -2.7,
+ 'winddirect': '9999',
+ 'windpower': '9999',
+ 'windspeed': ''}
+http://www.nmc.cn/f/rest/real/58238?_=1572257066286****************************************************************************************************
+{'airpressure': 1011.0,
+ 'alert': '9999',
+ 'aq': 2,
+ 'aq_text': '良',
+ 'aqi': 55,
+ 'city': '南京',
+ 'code': '58238',
+ 'days_1': {'date': '今天',
+            'day_info': '晴',
+            'day_power': '微风',
+            'day_temp': ' 9℃ ',
+            'day_winddirect': '无持续风向',
+            'night_info': None,
+            'night_power': None,
+            'night_temp': None,
+            'night_winddirect': None},
+ 'days_2': {'date': '明 天',
+            'day_info': '晴',
+            'day_power': '微风',
+            'day_temp': ' 21℃ ',
+            'day_winddirect': '无持续风向',
+            'night_info': '晴',
+            'night_power': '微风',
+            'night_temp': ' 8℃ ',
+            'night_winddirect': '东南风'},
+ 'days_3': {'date': '后 天',
+            'day_info': '晴',
+            'day_power': '微风',
+            'day_temp': ' 22℃ ',
+            'day_winddirect': '南风',
+            'night_info': '晴',
+            'night_power': '微风',
+            'night_temp': ' 9℃ ',
+            'night_winddirect': '南风'},
+ 'days_4': {'date': '10月31日',
+            'day_info': '晴',
+            'day_power': '微风',
+            'day_temp': ' 24℃ ',
+            'day_winddirect': '西南风',
+            'night_info': '多云',
+            'night_power': '微风',
+            'night_temp': ' 12℃ ',
+            'night_winddirect': '东风'},
+ 'days_5': {'date': '11月01日',
+            'day_info': '多云',
+            'day_power': '微风',
+            'day_temp': ' 23℃ ',
+            'day_winddirect': '东风',
+            'night_info': '多云',
+            'night_power': '微风',
+            'night_temp': ' 14℃ ',
+            'night_winddirect': '东南风'},
+ 'days_6': {'date': '11月02日',
+            'day_info': '多云',
+            'day_power': '微风',
+            'day_temp': ' 22℃ ',
+            'day_winddirect': '东风',
+            'night_info': '多云',
+            'night_power': '微风',
+            'night_temp': ' 14℃ ',
+            'night_winddirect': '东风'},
+ 'days_7': {'date': '11月03日',
+            'day_info': '多云',
+            'day_power': '3~4级',
+            'day_temp': ' 22℃ ',
+            'day_winddirect': '北风',
+            'night_info': '多云',
+            'night_power': '3~4级',
+            'night_temp': ' 13℃ ',
+            'night_winddirect': '东北风'},
+ 'feelst': 9999.0,
+ 'fmeans': '9999',
+ 'humidity': 35.0,
+ 'icomfort': 9999,
+ 'info': '-',
+ 'issuecontent': '9999',
+ 'province': '江苏省',
+ 'publish_time': '2019-10-28 16:35',
+ 'rain': 9999.0,
+ 'rcomfort': 9999,
+ 'temperature': 21.1,
+ 'winddirect': '9999',
+ 'windpower': '9999',
+ 'windspeed': ''}2019-10-28 18:04:26 [scrapy.core.scraper] ERROR: Error processing {'airpressure': '1011.0',
+ 'alert': '9999',
+ 'aq': '2',
+ 'aq_text': '良',
+ 'aqi': '55',
+ 'city': '南京',
+ 'code': '58238',
+ 'days_1': "{'date': '今天', 'day_info': '晴', 'night_info': None, 'day_temp': ' "
+           "9℃ ', 'night_temp': None, 'day_winddirect': '无持续风向', "
+           "'night_winddirect': None, 'day_power': '微风', 'night_power': None}",
+ 'days_2': "{'date': '明 天', 'day_info': '晴', 'night_info': '晴', 'day_temp': ' "
+           "21℃ ', 'night_temp': ' 8℃ ', 'day_winddirect': '无持续风向', "
+           "'night_winddirect': '东南风', 'day_power': '微风', 'night_power': '微风'}",
+ 'days_3': "{'date': '后 天', 'day_info': '晴', 'night_info': '晴', 'day_temp': ' "
+           "22℃ ', 'night_temp': ' 9℃ ', 'day_winddirect': '南风', "
+           "'night_winddirect': '南风', 'day_power': '微风', 'night_power': '微风'}",
+ 'days_4': "{'date': '10月31日', 'day_info': '晴', 'night_info': '多云', "
+           "'day_temp': ' 24℃ ', 'night_temp': ' 12℃ ', 'day_winddirect': "
+           "'西南风', 'night_winddirect': '东风', 'day_power': '微风', 'night_power': "
+           "'微风'}",
+ 'days_5': "{'date': '11月01日', 'day_info': '多云', 'night_info': '多云', "
+           "'day_temp': ' 23℃ ', 'night_temp': ' 14℃ ', 'day_winddirect': "
+           "'东风', 'night_winddirect': '东南风', 'day_power': '微风', 'night_power': "
+           "'微风'}",
+ 'days_6': "{'date': '11月02日', 'day_info': '多云', 'night_info': '多云', "
+           "'day_temp': ' 22℃ ', 'night_temp': ' 14℃ ', 'day_winddirect': "
+           "'东风', 'night_winddirect': '东风', 'day_power': '微风', 'night_power': "
+           "'微风'}",
+ 'days_7': "{'date': '11月03日', 'day_info': '多云', 'night_info': '多云', "
+           "'day_temp': ' 22℃ ', 'night_temp': ' 13℃ ', 'day_winddirect': "
+           "'北风', 'night_winddirect': '东北风', 'day_power': '3~4级', "
+           "'night_power': '3~4级'}",
+ 'feelst': '9999.0',
+ 'fmeans': '9999',
+ 'humidity': '35.0',
+ 'icomfort': '9999',
+ 'info': '-',
+ 'issuecontent': '9999',
+ 'province': '江苏省',
+ 'publish_time': '2019-10-28 16:35',
+ 'rain': '9999.0',
+ 'rcomfort': '9999',
+ 'temperature': '21.1',
+ 'winddirect': '9999',
+ 'windpower': '9999',
+ 'windspeed': ''}
+Traceback (most recent call last):
+  File "/home/ljp/Apps/Anaconda/envs/scrapy/lib/python3.6/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/ljp/Projects/scrapy_weather/scrapy_weather/pipelines.py", line 57, in process_item
+    item['days_4'], item['days_5'], item['days_6'], item['days_7'] ))
+  File "/home/ljp/Apps/Anaconda/envs/scrapy/lib/python3.6/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/home/ljp/Apps/Anaconda/envs/scrapy/lib/python3.6/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/home/ljp/Apps/Anaconda/envs/scrapy/lib/python3.6/site-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/ljp/Apps/Anaconda/envs/scrapy/lib/python3.6/site-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/home/ljp/Apps/Anaconda/envs/scrapy/lib/python3.6/site-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/home/ljp/Apps/Anaconda/envs/scrapy/lib/python3.6/site-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/home/ljp/Apps/Anaconda/envs/scrapy/lib/python3.6/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/ljp/Apps/Anaconda/envs/scrapy/lib/python3.6/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1062, "Duplicate entry '2019-10-28 16:35:00-58238' for key 'PRIMARY'")
+2019-10-28 18:04:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.nmc.cn/f/rest/real/53585?_=1572257066287>
+None
+2019-10-28 18:04:26 [scrapy.core.scraper] ERROR: Error processing {'airpressure': '971.0',
+ 'alert': '9999',
+ 'aq': '3',
+ 'aq_text': '轻度污染',
+ 'aqi': '111',
+ 'city': '西安',
+ 'code': '57036',
+ 'days_1': "{'date': '今天', 'day_info': '晴', 'night_info': None, 'day_temp': ' "
+           "6℃ ', 'night_temp': None, 'day_winddirect': '东南风', "
+           "'night_winddirect': None, 'day_power': '微风', 'night_power': None}",
+ 'days_2': "{'date': '明 天', 'day_info': '晴', 'night_info': '晴', 'day_temp': ' "
+           "19℃ ', 'night_temp': ' 7℃ ', 'day_winddirect': '东北风', "
+           "'night_winddirect': '西南风', 'day_power': '微风', 'night_power': '微风'}",
+ 'days_3': "{'date': '后 天', 'day_info': '晴', 'night_info': '多云', 'day_temp': ' "
+           "20℃ ', 'night_temp': ' 7℃ ', 'day_winddirect': '西北风', "
+           "'night_winddirect': '东南风', 'day_power': '微风', 'night_power': '微风'}",
+ 'days_4': "{'date': '10月31日', 'day_info': '小雨', 'night_info': '阴', "
+           "'day_temp': ' 18℃ ', 'night_temp': ' 8℃ ', 'day_winddirect': "
+           "'东北风', 'night_winddirect': '东北风', 'day_power': '微风', "
+           "'night_power': '微风'}",
+ 'days_5': "{'date': '11月01日', 'day_info': '阴', 'night_info': '晴', 'day_temp': "
+           "' 17℃ ', 'night_temp': ' 8℃ ', 'day_winddirect': '东北风', "
+           "'night_winddirect': '东北风', 'day_power': '微风', 'night_power': '微风'}",
+ 'days_6': "{'date': '11月02日', 'day_info': '晴', 'night_info': '阴', 'day_temp': "
+           "' 18℃ ', 'night_temp': ' 9℃ ', 'day_winddirect': '东北风', "
+           "'night_winddirect': '东风', 'day_power': '微风', 'night_power': '微风'}",
+ 'days_7': "{'date': '11月03日', 'day_info': '多云', 'night_info': '晴', "
+           "'day_temp': ' 18℃ ', 'night_temp': ' 9℃ ', 'day_winddirect': "
+           "'东北风', 'night_winddirect': '东风', 'day_power': '3~4级', "
+           "'night_power': '微风'}",
+ 'feelst': '9999.0',
+ 'fmeans': '9999',
+ 'humidity': '33.0',
+ 'icomfort': '9999',
+ 'info': '-',
+ 'issuecontent': '9999',
+ 'province': '陕西省',
+ 'publish_time': '2019-10-28 17:35',
+ 'rain': '9999.0',
+ 'rcomfort': '9999',
+ 'temperature': '18.9',
+ 'winddirect': '9999',
+ 'windpower': '9999',
+ 'windspeed': ''}
+Traceback (most recent call last):
+  File "/home/ljp/Apps/Anaconda/envs/scrapy/lib/python3.6/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/ljp/Projects/scrapy_weather/scrapy_weather/pipelines.py", line 57, in process_item
+    item['days_4'], item['days_5'], item['days_6'], item['days_7'] ))
+  File "/home/ljp/Apps/Anaconda/envs/scrapy/lib/python3.6/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/home/ljp/Apps/Anaconda/envs/scrapy/lib/python3.6/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/home/ljp/Apps/Anaconda/envs/scrapy/lib/python3.6/site-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/ljp/Apps/Anaconda/envs/scrapy/lib/python3.6/site-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/home/ljp/Apps/Anaconda/envs/scrapy/lib/python3.6/site-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/home/ljp/Apps/Anaconda/envs/scrapy/lib/python3.6/site-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/home/ljp/Apps/Anaconda/envs/scrapy/lib/python3.6/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/ljp/Apps/Anaconda/envs/scrapy/lib/python3.6/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1062, "Duplicate entry '2019-10-28 17:35:00-57036' for key 'PRIMARY'")
+2019-10-28 18:04:26 [scrapy.core.engine] INFO: Closing spider (finished)
+2019-10-28 18:04:26 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 6829,
+ 'downloader/request_count': 16,
+ 'downloader/request_method_count/GET': 16,
+ 'downloader/response_bytes': 79508,
+ 'downloader/response_count': 16,
+ 'downloader/response_status_count/200': 15,
+ 'downloader/response_status_count/404': 1,
+ 'elapsed_time_seconds': 0.753356,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2019, 10, 28, 10, 4, 26, 493009),
+ 'item_scraped_count': 2,
+ 'log_count/DEBUG': 18,
+ 'log_count/ERROR': 3,
+ 'log_count/INFO': 10,
+ 'memusage/max': 45346816,
+ 'memusage/startup': 45346816,
+ 'request_depth_max': 2,
+ 'response_received_count': 16,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/404': 1,
+ 'scheduler/dequeued': 15,
+ 'scheduler/dequeued/memory': 15,
+ 'scheduler/enqueued': 15,
+ 'scheduler/enqueued/memory': 15,
+ 'start_time': datetime.datetime(2019, 10, 28, 10, 4, 25, 739653)}
+2019-10-28 18:04:26 [scrapy.core.engine] INFO: Spider closed (finished)
+
+http://www.nmc.cn/f/rest/real/53585?_=1572257066287****************************************************************************************************
+{'airpressure': 911.0,
+ 'alert': '9999',
+ 'aq': 2,
+ 'aq_text': '良',
+ 'aqi': 86,
+ 'city': '繁峙',
+ 'code': '53585',
+ 'days_1': {'date': '今天',
+            'day_info': '晴',
+            'day_power': '微风',
+            'day_temp': ' -2℃ ',
+            'day_winddirect': '西北风',
+            'night_info': None,
+            'night_power': None,
+            'night_temp': None,
+            'night_winddirect': None},
+ 'days_2': {'date': '明 天',
+            'day_info': '晴',
+            'day_power': '微风',
+            'day_temp': ' 18℃ ',
+            'day_winddirect': '西风',
+            'night_info': '晴',
+            'night_power': '微风',
+            'night_temp': ' 0℃ ',
+            'night_winddirect': '西风'},
+ 'days_3': {'date': '后 天',
+            'day_info': '晴',
+            'day_power': '微风',
+            'day_temp': ' 19℃ ',
+            'day_winddirect': '西北风',
+            'night_info': '晴',
+            'night_power': '微风',
+            'night_temp': ' 0℃ ',
+            'night_winddirect': '西北风'},
+ 'days_4': {'date': '10月31日',
+            'day_info': '晴',
+            'day_power': '微风',
+            'day_temp': ' 19℃ ',
+            'day_winddirect': '西南风',
+            'night_info': '多云',
+            'night_power': '微风',
+            'night_temp': ' 0℃ ',
+            'night_winddirect': '南风'},
+ 'days_5': {'date': '11月01日',
+            'day_info': '多云',
+            'day_power': '微风',
+            'day_temp': ' 19℃ ',
+            'day_winddirect': '南风',
+            'night_info': '多云',
+            'night_power': '微风',
+            'night_temp': ' 1℃ ',
+            'night_winddirect': '南风'},
+ 'days_6': {'date': '11月02日',
+            'day_info': '多云',
+            'day_power': '微风',
+            'day_temp': ' 16℃ ',
+            'day_winddirect': '南风',
+            'night_info': '多云',
+            'night_power': '微风',
+            'night_temp': ' 1℃ ',
+            'night_winddirect': '南风'},
+ 'days_7': {'date': '11月03日',
+            'day_info': '多云',
+            'day_power': '微风',
+            'day_temp': ' 16℃ ',
+            'day_winddirect': '西南风',
+            'night_info': '多云',
+            'night_power': '微风',
+            'night_temp': ' 1℃ ',
+            'night_winddirect': '西北风'},
+ 'feelst': 9999.0,
+ 'fmeans': '9999',
+ 'humidity': 16.0,
+ 'icomfort': 9999,
+ 'info': '晴',
+ 'issuecontent': '9999',
+ 'province': '山西省',
+ 'publish_time': '2019-10-28 17:40',
+ 'rain': 9999.0,
+ 'rcomfort': 9999,
+ 'temperature': 8.5,
+ 'winddirect': '9999',
+ 'windpower': '9999',
+ 'windspeed': ''}
+http://www.nmc.cn/f/rest/real/57036?_=1572257066284****************************************************************************************************
+{'airpressure': 971.0,
+ 'alert': '9999',
+ 'aq': 3,
+ 'aq_text': '轻度污染',
+ 'aqi': 111,
+ 'city': '西安',
+ 'code': '57036',
+ 'days_1': {'date': '今天',
+            'day_info': '晴',
+            'day_power': '微风',
+            'day_temp': ' 6℃ ',
+            'day_winddirect': '东南风',
+            'night_info': None,
+            'night_power': None,
+            'night_temp': None,
+            'night_winddirect': None},
+ 'days_2': {'date': '明 天',
+            'day_info': '晴',
+            'day_power': '微风',
+            'day_temp': ' 19℃ ',
+            'day_winddirect': '东北风',
+            'night_info': '晴',
+            'night_power': '微风',
+            'night_temp': ' 7℃ ',
+            'night_winddirect': '西南风'},
+ 'days_3': {'date': '后 天',
+            'day_info': '晴',
+            'day_power': '微风',
+            'day_temp': ' 20℃ ',
+            'day_winddirect': '西北风',
+            'night_info': '多云',
+            'night_power': '微风',
+            'night_temp': ' 7℃ ',
+            'night_winddirect': '东南风'},
+ 'days_4': {'date': '10月31日',
+            'day_info': '小雨',
+            'day_power': '微风',
+            'day_temp': ' 18℃ ',
+            'day_winddirect': '东北风',
+            'night_info': '阴',
+            'night_power': '微风',
+            'night_temp': ' 8℃ ',
+            'night_winddirect': '东北风'},
+ 'days_5': {'date': '11月01日',
+            'day_info': '阴',
+            'day_power': '微风',
+            'day_temp': ' 17℃ ',
+            'day_winddirect': '东北风',
+            'night_info': '晴',
+            'night_power': '微风',
+            'night_temp': ' 8℃ ',
+            'night_winddirect': '东北风'},
+ 'days_6': {'date': '11月02日',
+            'day_info': '晴',
+            'day_power': '微风',
+            'day_temp': ' 18℃ ',
+            'day_winddirect': '东北风',
+            'night_info': '阴',
+            'night_power': '微风',
+            'night_temp': ' 9℃ ',
+            'night_winddirect': '东风'},
+ 'days_7': {'date': '11月03日',
+            'day_info': '多云',
+            'day_power': '3~4级',
+            'day_temp': ' 18℃ ',
+            'day_winddirect': '东北风',
+            'night_info': '晴',
+            'night_power': '微风',
+            'night_temp': ' 9℃ ',
+            'night_winddirect': '东风'},
+ 'feelst': 9999.0,
+ 'fmeans': '9999',
+ 'humidity': 33.0,
+ 'icomfort': 9999,
+ 'info': '-',
+ 'issuecontent': '9999',
+ 'province': '陕西省',
+ 'publish_time': '2019-10-28 17:35',
+ 'rain': 9999.0,
+ 'rcomfort': 9999,
+ 'temperature': 18.9,
+ 'winddirect': '9999',
+ 'windpower': '9999',
+ 'windspeed': ''}
