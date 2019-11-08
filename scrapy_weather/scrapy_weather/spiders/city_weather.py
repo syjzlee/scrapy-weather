@@ -25,7 +25,8 @@ class CityWeatherSpider(scrapy.Spider):
                   'http://www.nmc.cn/publish/forecast/ASN/xian.html',  # 西安
                   'http://www.nmc.cn/publish/forecast/ASX/wutaishan.html', # 五台山
                   'http://www.nmc.cn/publish/forecast/ASX/fanzhi.html', # 繁峙
-                  'http://www.nmc.cn/publish/forecast/AAH/xuancheng.html']   # 宣城
+                  'http://www.nmc.cn/publish/forecast/AAH/xuancheng.html', # 宣城
+                  'http://www.nmc.cn/publish/forecast/ANM/etuokeqi.html',]   # 鄂托克旗
     # start_urls = ['http://www.nmc.cn/f/rest/aqi/54503?_={0:.0f}'.format(time.time()*1000)]
 
     custom_settings = {
